@@ -1,0 +1,25 @@
+####
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "fullName": "Admin",
+  "password": "password"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "password"
+}      
+
+###
+POST http://localhost:3000/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE2ODU4NjM0OTk5NjciLCJpYXQiOjE2ODU4NjM1MDgsImV4cCI6MTY4NTg2NDQwOH0.2P2g7x0Zd4oY1jArlmP2v_-lbC2ScIBZUApqLdwkBjc
+
+###
+POST http://localhost:3000/refresh_token
