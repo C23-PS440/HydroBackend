@@ -1,33 +1,41 @@
 const Sequelize = require('sequelize');
-const sequelize = require('../util/database.js');
+const sequelize = require('../util/database');
 const User = require('./user.js');
 
-// Table Blog
-const Blog = sequelize.define(
-  'blog',
+// Table History
+const History = sequelize.define(
+  'history',
   {
-    blogId: {
+    historyId: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
       primaryKey: true,
     },
-    blogTitle: {
+    plantImage: {
       type: Sequelize.STRING,
       allowNull: false,
     },
-    blogDescription: {
+    plantName: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
+    diseaseName: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
+    diseaseRecognition: {
       type: Sequelize.TEXT('long'),
-      allowNull: false,
+      allowNull: true,
     },
-    dateCreated: {
-      type: Sequelize.STRING,
-      allowNull: false,
+    diseaseCause: {
+      type: Sequelize.TEXT('long'),
+      allowNull: true,
     },
-    createdBy: {
-      type: Sequelize.STRING,
-      allowNull: false,
+    solution: {
+      type: Sequelize.TEXT('long'),
+      allowNull: true,
     },
-    imageUrl: {
+    dateAndTime: {
       type: Sequelize.STRING,
       allowNull: true,
     },
@@ -43,4 +51,4 @@ const Blog = sequelize.define(
   { timestamps: false }
 );
 
-module.exports = Blog;
+module.exports = History;

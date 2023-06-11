@@ -1,0 +1,242 @@
+[
+  {
+    "index": 0,
+    "plantName": "Blueberry",
+    "diseaseName": "Blueberry Healthy",
+    "diseaseRecognition": "",
+    "diseaseCause": "",
+    "solution": ""
+  },
+  {
+    "index": 1,
+    "plantName": "Blueberry",
+    "diseaseName": "Blueberry Rusty",
+    "diseaseRecognition": "Penyakit ini ditandai dengan bercak berwarna coklat kekuningan pada daun dan batang tanaman blueberry.",
+    "diseaseCause": "Disebabkan oleh Jamur Pucciniastrum americanum",
+    "solution": "1. Menjaga kebersihan lingkungan sekitar tanaman. \n 2. Menghindari kelembaban tinggi dan penumpukan air. \n 3. Menggunakan fungisida yang sesuai sesuai petunjuk penggunaan."
+  },
+  {
+    "index": 2,
+    "plantName": "Chilli",
+    "diseaseName": "Chilli Gemini",
+    "diseaseRecognition": "Penyakit ini disebabkan oleh virus yang ditularkan oleh kutu daun.",
+    "diseaseCause": "Disebabkan oleh Virus Pepper Mottle Virus (PepMoV)",
+    "solution": "1. Menghindari penularan virus dengan mengendalikan populasi kutu daun. \n 2. Menggunakan varietas yang tahan terhadap virus. \n 3. Menjaga kebersihan lingkungan dan sanitasi yang baik. \n"
+  },
+  {
+    "index": 3,
+    "plantName": "Chilli",
+    "diseaseName": "Chilli Healthy",
+    "diseaseRecognition": "",
+    "diseaseCause": "",
+    "solution": ""
+  },
+  {
+    "index": 4,
+    "plantName": "Chilli",
+    "diseaseName": "Chilli Mosaic",
+    "diseaseRecognition": "Penyakit ini ditandai dengan munculnya bercak kuning, hijau, atau putih pada daun cabai.",
+    "diseaseCause": "Virus cabai yang ditularkan oleh kutu daun.",
+    "solution": "1. Mengendalikan populasi kutu daun. \n 2. Menggunakan benih atau bibit yang sehat. \n 3. Memusnahkan tanaman yang terinfeksi untuk mencegah penyebaran."
+  },
+  {
+    "index": 5,
+    "plantName": "Cucucumber",
+    "diseaseName": "Cucumber Blight",
+    "diseaseRecognition": "Penyakit ini menyebabkan munculnya bercak coklat dan basah pada daun, batang, dan buah mentimun.",
+    "diseaseCause": "Disebabkan oleh Jamur Phytophthora capsici",
+    "solution": "1. Menghindari penumpukan air di sekitar tanaman. \n 2. Menghindari penyiraman berlebihan. \n 3. Menggunakan fungisida yang sesuai sesuai petunjuk penggunaan. \n 4. Menjaga kebersihan lingkungan sekitar tanaman."
+  },
+  {
+    "index": 6,
+    "plantName": "Cucucumber",
+    "diseaseName": "Cucucumber Healthy",
+    "diseaseRecognition": "",
+    "diseaseCause": "",
+    "solution": ""
+  },
+  {
+    "index": 7,
+    "plantName": "Grape",
+    "diseaseName": "Grape Blackrot",
+    "diseaseRecognition": "Grape Black Rot ditandai dengan munculnya bercak-bercak berwarna coklat pada daun, ranting, dan buah anggur. Bercak ini berkembang menjadi bercak yang menghitam dan berkerut, dengan pertumbuhan spora jamur berwarna hitam di dalamnya. Penyakit ini dapat menyebabkan penurunan kualitas buah, kerontokan daun, dan merusak tanaman secara keseluruhan.",
+    "diseaseCause": "Disebabkan oleh Jamur bernama Guignardia bidwellii",
+    "solution": "1. Sanitasi: Jaga kebersihan sistem hidroponik dengan membuang daun-daun yang jatuh, ranting-ranting yang terinfeksi, atau buah-buah yang terkena penyakit. Ini akan membantu mengurangi populasi jamur penyebab Black Rot. \n 2. Ventilasi dan Sirkulasi Udara: Pastikan ada ventilasi yang baik di dalam ruangan atau rumah kaca hidroponik untuk meningkatkan sirkulasi udara. Ini akan membantu mengurangi kelembaban dan menciptakan kondisi yang kurang mendukung pertumbuhan jamur. \n 3. Irigasi yang Tepat: Hindari penyiraman berlebihan dan pastikan kelembaban media tanam tetap dalam rentang yang seimbang. Hindari menyiram langsung ke daun dan buah anggur untuk mengurangi kelembaban yang dapat memicu pertumbuhan jamur. \n 4. Praktik Budidaya yang Sehat: Lakukan pemangkasan dan penjarangan secara teratur untuk meningkatkan sirkulasi udara dan mengurangi kepadatan tanaman. Pastikan tanaman anggur menerima nutrisi yang cukup dan pertahankan kondisi yang optimal untuk pertumbuhan dan perkembangan tanaman. \n 5. Penggunaan Fungisida: Gunakan fungisida yang direkomendasikan dan aman untuk mengendalikan pertumbuhan jamur Guignardia bidwellii. Terapkan fungisida sesuai petunjuk dan jadwal yang dianjurkan. \n 6. Monitoring dan Deteksi Dini: Periksa secara teratur tanaman anggur untuk tanda-tanda awal infeksi Black Rot. Jika terdeteksi, segera ambil tindakan pengendalian untuk mencegah penyebaran penyakit ke tanaman lainnya."
+  },
+  {
+    "index": 8,
+    "plantName": "Grape",
+    "diseaseName": "Grape Esca (Black Measles)",
+    "diseaseRecognition": "Grape Esca, juga dikenal sebagai black measles adalah kompleks penyakit yang melibatkan beberapa jamur patogen, termasuk Phaeoacremonium spp., Phaeomoniella chlamydospora, dan Fomitiporia mediterranea. Penyakit ini ditandai dengan munculnya bercak hitam atau coklat pada batang, daun, dan buah anggur. Daun juga dapat mengalami perubahan warna menjadi kuning atau merah. Penyakit ini dapat menyebabkan kegagalan pertumbuhan, penurunan produktivitas, dan bahkan kematian tanaman anggur.",
+    "diseaseCause": "Beberapa jamur patogen, termasuk Phaeoacremonium spp., Phaeomoniella chlamydospora, dan Fomitiporia mediterranea",
+    "solution": "1. Karantina dan Pembersihan: Segera pisahkan tanaman yang terinfeksi dari tanaman yang sehat untuk mencegah penyebaran penyakit. Buang bagian tanaman yang terinfeksi dengan hati-hati dan bersihkan peralatan yang terkontaminasi sebelum digunakan kembali. \n 2. Pruning (Pemangkasan): Lakukan pemangkasan secara teratur untuk menghilangkan dan membuang bagian tanaman yang terinfeksi. Ini membantu mengurangi populasi jamur patogen dan meningkatkan sirkulasi udara di sekitar tanaman. \n 3. Kebersihan dan Sanitasi: Pastikan sistem hidroponik tetap bersih dan sanitasi dengan membuang daun-daun yang jatuh dan bagian tanaman yang terinfeksi. Hindari kelembaban berlebih dan pastikan sirkulasi udara yang baik untuk mengurangi kondisi yang menguntungkan bagi jamur. \n 4. Penggunaan Fungisida: Penggunaan fungisida dapat membantu dalam pengendalian penyakit Grape Esca. Konsultasikan dengan ahli pertanian atau petugas lokal untuk rekomendasi fungisida yang sesuai untuk sistem hidroponik dan jenis tanaman anggur yang Anda budidayakan. \n 5. Pemeliharaan yang Optimal: Pastikan nutrisi dan kondisi lingkungan dalam sistem hidroponik terjaga dengan baik. Tanaman yang sehat dan kuat lebih mampu melawan infeksi penyakit. Pastikan pH, kelembaban, dan nutrisi air dijaga dalam rentang yang optimal. \n 6. Monitoring dan Deteksi Dini: Periksa secara teratur tanaman anggur untuk tanda-tanda awal infeksi Grape Esca. Jika terdeteksi, ambil tindakan pengendalian segera untuk mencegah penyebaran penyakit ke tanaman lainnya."
+  },
+  {
+    "index": 9,
+    "plantName": "Grape",
+    "diseaseName": "Grape Leaf Blight",
+    "diseaseRecognition": "Grape Blight adalah istilah yang umum digunakan untuk merujuk pada beberapa penyakit anggur, termasuk Anthracnose, Botrytis cinerea (jamur abu-abu), dan Eutypa dieback. Penyakit-penyakit ini dapat menyebabkan kerusakan pada daun, ranting, dan buah anggur. Gejalanya termasuk bercak-bercak coklat pada daun, busuk pada buah, dan kematian sebagian atau seluruh bagian tanaman.",
+    "diseaseCause": "Penyakit Grape Blight disebabkan oleh jamur seperti Botrytis cinerea, Guignardia bidwellii, Phomopsis viticola, dan Eutypa lata. Beberapa virus yang terkait adalah Grapevine Leafroll-associated Virus (GLRaV), Grapevine Fanleaf Virus (GFLV), dan Grapevine Fleck Virus (GFkV).",
+    "solution": "1. Jaga kebersihan sistem hidroponik dengan membuang daun-daun yang terinfeksi dan ranting-ranting yang terinfeksi. Lakukan pemangkasan secara teratur untuk membuang bagian tanaman yang terinfeksi. Ini membantu mengurangi populasi patogen dan meningkatkan sirkulasi udara. \n 2. Hindari kelembaban berlebih dalam sistem hidroponik. Pastikan sirkulasi udara yang baik di sekitar tanaman anggur. Hindari penyiraman yang berlebihan dan pastikan kelembaban relatif dijaga pada tingkat yang tidak menguntungkan pertumbuhan jamur. \n 3. Penggunaan fungisida yang direkomendasikan dapat membantu dalam pengendalian penyakit Grape Blight. Konsultasikan dengan ahli pertanian atau petugas lokal untuk rekomendasi fungisida yang sesuai untuk sistem hidroponik dan jenis tanaman anggur yang Anda budidayakan. \n 4. Pastikan nutrisi dan kondisi lingkungan dalam sistem hidroponik terjaga dengan baik. Tanaman yang sehat dan kuat lebih mampu melawan infeksi penyakit. Pastikan pH, kelembaban, dan nutrisi air dijaga dalam rentang yang optimal. \n 5. Periksa secara teratur tanaman anggur untuk tanda-tanda awal penyakit Grape Blight. Jika terdeteksi, ambil tindakan pengendalian segera untuk mencegah penyebaran penyakit ke tanaman lainnya. "
+  },
+  {
+    "index": 10,
+    "plantName": "Grape",
+    "diseaseName": "Grape Healthy",
+    "diseaseRecognition": "",
+    "diseaseCause": "",
+    "solution": ""
+  },
+  {
+    "index": 11,
+    "plantName": "Lettuce",
+    "diseaseName": "Lettuce Bacterial",
+    "diseaseRecognition": "Penyakit ini ditandai dengan munculnya bercak berair pada daun selada yang kemudian berubah menjadi coklat.",
+    "diseaseCause": "Disebabkan oleh Bakteri Xanthomonas campestris pv. vitians",
+    "solution": "1. Menghindari penanaman terlalu rapat. \n 2. Menghindari penggunaan air irigasi yang terkontaminasi. \n 3. Menggunakan benih yang sehat dan terjamin kualitasnya. \n 4. Menjaga kebersihan lingkungan sekitar tanaman."
+  },
+  {
+    "index": 12,
+    "plantName": "Lettuce",
+    "diseaseName": "Lettuce Downy",
+    "diseaseRecognition": "Penyakit ini menyebabkan munculnya bercak berwarna hijau tua pada permukaan bawah daun selada.",
+    "diseaseCause": "Disebabkan oleh Jamur Bremia lactucae",
+    "solution": "1. Menjaga kelembaban rendah di sekitar tanaman. \n 2. Menghindari penanaman terlalu rapat. \n 3. Menggunakan fungisida yang sesuai sesuai petunjuk penggunaan.\n 4. Menghindari kelembaban tinggi dan penumpukan air."
+  },
+  {
+    "index": 13,
+    "plantName": "Lettuce",
+    "diseaseName": "Lettuce Healthy",
+    "diseaseRecognition": "",
+    "diseaseCause": "",
+    "solution": ""
+  },
+  {
+    "index": 14,
+    "plantName": "Lettuce",
+    "diseaseName": "Lettuce Powdery",
+    "diseaseRecognition": "Penyakit ini ditandai dengan munculnya serbuk putih pada daun selada, terutama pada permukaan atas daun.",
+    "diseaseCause": "Disebabkan oleh Jamur Erysiphe cichoracearum",
+    "solution": "1. Menjaga kelembaban rendah di sekitar tanaman. \n 2.Menghindari penanaman terlalu rapat. \n 3. Menggunakan fungisida yang sesuai sesuai petunjuk penggunaan. \n 4. Menjaga sirkulasi udara yang baik di sekitar tanaman."
+  },
+  {
+    "index": 15,
+    "plantName": "Lettuce",
+    "diseaseName": "Lettuce Septoria",
+    "diseaseRecognition": "Penyakit ini ditandai dengan munculnya bercak berwarna coklat dengan pinggiran kuning pada daun selada.",
+    "diseaseCause": "Disebabkan oleh Jamur Septoria lactucae",
+    "solution": "1. Menjaga kebersihan lingkungan sekitar tanaman. \n 2. Menghindari penanaman terlalu rapat. \n 3. Menggunakan fungisida yang sesuai sesuai petunjuk penggunaan. \n 4. Menjaga kelembaban rendah di sekitar tanaman."
+  },
+  {
+    "index": 16,
+    "plantName": "Bellpepper",
+    "diseaseName": "Bellpepper Bacterial Spot",
+    "diseaseRecognition": "Bellpepper Bacterial Spot ditandai dengan munculnya bercak berair berwarna coklat atau hitam pada daun, batang, dan buah paprika. Bercak ini dapat berkembang menjadi lesi yang lebih besar dengan pusaran kekuningan di tengahnya. Penyakit ini dapat menyebabkan defoliasi (pelepasan daun) dan mengurangi kualitas dan produktivitas buah paprika.",
+    "diseaseCause": "Penyakit ini disebabkan oleh bakteri Xanthomonas campestris pv. vesicatoria",
+    "solution": "1. Praktik Sanitasi: Jaga kebersihan sistem hidroponik dengan membuang daun-daun yang terinfeksi dan bagian tanaman yang terdampak. Hindari penumpukan sisa-sisa tanaman yang terinfeksi di sekitar tanaman paprika. Ini membantu mengurangi populasi bakteri dan penyebaran penyakit. \n 2. Penghindaran Penyebaran: Hindari menyentuh tanaman dengan tangan yang kotor atau alat yang tidak bersih. Pastikan peralatan dan peralatan hidroponik yang digunakan dalam budidaya tetap bersih dan terbebas dari bakteri. \n 3. Sirkulasi Udara dan Ventilasi: Pastikan ada sirkulasi udara yang baik di dalam ruangan atau rumah kaca hidroponik. Ini membantu mengurangi kelembaban dan menciptakan lingkungan yang kurang menguntungkan bagi pertumbuhan bakteri. Gunakan kipas atau ventilasi tambahan jika perlu. \n 4. Penghindaran Penyiraman Daun: Hindari penyiraman daun secara langsung. Fokuskan penyiraman pada akar tanaman untuk mengurangi kelembaban di permukaan daun yang dapat memicu pertumbuhan bakteri. \n 5. Penggunaan Fungisida Bakterisida: Gunakan bakterisida yang direkomendasikan dan aman untuk mengendalikan pertumbuhan bakteri Xanthomonas campestris pv. vesicatoria. Terapkan bakterisida sesuai petunjuk dan jadwal yang dianjurkan. \n 6. Pemangkasan dan Penjarangan: Lakukan pemangkasan secara teratur untuk meningkatkan sirkulasi udara di antara tanaman dan mengurangi kepadatan tanaman. Juga, lakukan penjarangan buah yang berlebihan untuk mengurangi kelembaban dan memberikan ruang yang cukup bagi buah yang tersisa untuk berkembang dengan baik. \n 7. Pemeliharaan yang Optimal: Pastikan nutrisi dan kondisi lingkungan dalam sistem hidroponik terjaga dengan baik. Tanaman yang sehat dan kuat lebih mampu melawan infeksi bakteri. Pastikan pH, kelembaban, dan nutrisi air dijaga dalam rentang yang optimal."
+  },
+  {
+    "index": 17,
+    "plantName": "Bellpepper",
+    "diseaseName": "Bellpepper Healthy",
+    "diseaseRecognition": "",
+    "diseaseCause": "",
+    "solution": ""
+  },
+  {
+    "index": 18,
+    "plantName": "Strawberry",
+    "diseaseName": "Strawberry Leaf Scorch",
+    "diseaseRecognition": "Penyakit ini ditandai dengan munculnya daun-daun stroberi yang menguning dan berubah warna menjadi merah atau merah keunguan. Daun-daun yang terinfeksi biasanya mengalami pembusukan tepi dan kerusakan yang luas. ",
+    "diseaseCause": "Disebabkan oleh bakteri Xylella fastidiosa. ",
+    "solution": "1. Karantina dan Pemisahan: Jika ada tanaman yang terinfeksi SLS, segera pisahkan dari tanaman yang sehat untuk mencegah penyebaran bakteri. Hindari kontak langsung dengan tanaman yang terinfeksi atau alat yang telah terpapar bakteri. \n 2. Sanitasi: Jaga kebersihan dan sanitasi dalam sistem hidroponik dengan membuang daun-daun yang terinfeksi, bagian tanaman yang terkena, atau tanaman yang telah mati. Ini akan membantu mengurangi populasi bakteri penyebab penyakit. \n 3. Pengendalian Serangga Vektor: Beberapa serangga seperti kutu kebul dan ulat buah dapat menjadi vektor penyakit Strawberry Leaf Scorch. Lindungi tanaman dari serangga ini dengan menggunakan jaring penghalau serangga atau serangga pemangsa yang aman. \n 4. Pemangkasan dan Pemupukan: Lakukan pemangkasan secara teratur untuk membuang daun-daun yang terinfeksi dan memberikan sirkulasi udara yang baik. Selain itu, pastikan nutrisi dalam sistem hidroponik seimbang dan cukup untuk menjaga kesehatan tanaman. \n 5. Pengawasan dan Deteksi Dini: Periksa tanaman secara teratur untuk tanda-tanda awal infeksi Strawberry Leaf Scorch. Dengan deteksi dini, tindakan pencegahan dan pengendalian dapat diambil lebih cepat."
+  },
+  {
+    "index": 19,
+    "plantName": "Strawberry",
+    "diseaseName": "Strawberry Healthy",
+    "diseaseRecognition": "",
+    "diseaseCause": "",
+    "solution": ""
+  },
+  {
+    "index": 20,
+    "plantName": "Tomato",
+    "diseaseName": "Tomato Bacterial Spot",
+    "diseaseRecognition": "Penyakit ini menyebabkan munculnya bercak berair dengan pinggiran kuning pada daun dan buah tomat.",
+    "diseaseCause": "Disebabkan oleh Bakteri Xanthomonas campestris pv. vesicatoria",
+    "solution": "1. Menghindari penanaman terlalu rapat. \n 2. Menghindari penggunaan air irigasi yang terkontaminasi. \n 3. Menggunakan benih yang sehat dan terjamin kualitasnya. \n 4. Menjaga kebersihan lingkungan sekitar tanaman."
+  },
+  {
+    "index": 21,
+    "plantName": "Tomato",
+    "diseaseName": "Tomato Early Blight",
+    "diseaseRecognition": "Tomato Early Blight ditandai dengan munculnya bercak-bercak coklat pada daun bagian bawah tanaman yang kemudian berkembang menjadi bercak dengan tepi hitam yang kering. Bercak ini dapat meluas ke batang dan buah tomat. Penyakit ini dapat menyebabkan penurunan produktivitas tanaman dan mempengaruhi kualitas buah tomat.",
+    "diseaseCause": "Penyakit ini disebabkan oleh jamur Alternaria solani",
+    "solution": "1. Praktik Sanitasi: Jaga kebersihan sistem hidroponik dengan membuang daun-daun yang terinfeksi dan bagian tanaman yang terdampak. Hindari penumpukan sisa-sisa tanaman yang terinfeksi di sekitar tanaman tomat. Ini membantu mengurangi populasi jamur dan penyebaran penyakit. \n 2. Sirkulasi Udara dan Ventilasi: Pastikan ada sirkulasi udara yang baik di dalam ruangan atau rumah kaca hidroponik. Ini membantu mengurangi kelembaban dan menciptakan lingkungan yang kurang menguntungkan bagi pertumbuhan jamur. Gunakan kipas atau ventilasi tambahan jika perlu. \n 3. Pengairan yang Tepat: Hindari penyiraman berlebihan dan pastikan kelembaban media tanam tetap dalam rentang yang seimbang. Hindari penyiraman langsung ke daun dan buah tomat untuk mengurangi kelembaban yang dapat memicu pertumbuhan jamur. \n 4. Pemangkasan dan Penjarangan: Lakukan pemangkasan secara teratur untuk meningkatkan sirkulasi udara di antara tanaman dan mengurangi kepadatan tanaman. Juga, lakukan penjarangan buah yang berlebihan untuk mengurangi kelembaban dan memberikan ruang yang cukup bagi buah yang tersisa untuk berkembang dengan baik. \n 5. Penggunaan Fungisida: Gunakan fungisida yang direkomendasikan dan aman untuk mengendalikan pertumbuhan jamur Alternaria solani. Terapkan fungisida sesuai petunjuk dan jadwal yang dianjurkan. \n 6. Rotasi Tanaman: Hindari menanam tomat atau tanaman solanaceous lainnya di tempat yang sama secara berurutan. Melakukan rotasi tanaman membantu mengurangi risiko penyebaran penyakit dan mempertahankan kebersihan sistem hidroponik."
+  },
+  {
+    "index": 22,
+    "plantName": "Tomato",
+    "diseaseName": "Tomato Late Blight",
+    "diseaseRecognition": "Penyakit ini ditandai dengan munculnya bercak berair berwarna keabu-abuan atau hijau pada daun dan buah tomat. Bercak-bercak ini kemudian berkembang menjadi area yang terinfeksi berwarna coklat kehitaman dan dapat membusuk dengan cepat",
+    "diseaseCause": "Late Blight disebabkan oleh jamur Phytophthora infestans",
+    "solution": "1. Jaga kebersihan dengan membuang daun-daun yang jatuh, sisa-sisa tanaman, atau bagian tanaman yang terinfeksi. \n 2. Hindari penyiraman berlebihan dan pastikan kelembaban media tanam tetap dalam rentang yang seimbang. \n 3. Gunakan fungisida yang direkomendasikan untuk mengendalikan pertumbuhan jamur Alternaria solani. Terapkan sesuai petunjuk dan jadwal yang dianjurkan. \n 4. Praktikkan rotasi tanaman yang baik dengan tidak menanam tanaman tomat atau tanaman yang rentan terhadap Alternaria solani pada lokasi yang sama secara berurutan."
+  },
+  {
+    "index": 23,
+    "plantName": "Tomato",
+    "diseaseName": "Tomato Leaf Mold",
+    "diseaseRecognition": "Tomat Leaf Mold ditandai dengan munculnya bercak kuning atau kecoklatan pada daun, yang kemudian berkembang menjadi benjolan berwarna kuning atau coklat di bagian bawah daun. Benjolan ini biasanya disertai dengan pertumbuhan jamur berwarna coklat atau kehijauan pada permukaan bawah daun.",
+    "diseaseCause": "Disebabkan oleh Jamur bernama Fulvia fulva",
+    "solution": "1. Ventilasi dan Sirkulasi Udara: Pastikan ada ventilasi yang baik di dalam ruangan atau rumah kaca hidroponik untuk meningkatkan sirkulasi udara. Ini akan membantu mengurangi kelembaban yang menyebabkan pertumbuhan jamur. \n 2. Pengontrolan Kelembaban: Pertahankan tingkat kelembaban yang seimbang dalam sistem hidroponik. Hindari kelembaban berlebih, khususnya di sekitar daun tanaman. Gunakan ventilasi dan penggunaan kipas untuk mengurangi kelembaban. \n 3. Pengendalian Suhu: Jaga suhu lingkungan hidroponik pada tingkat yang optimal untuk pertumbuhan tanaman tomat dan hindari suhu yang terlalu rendah atau terlalu tinggi. Suhu yang ekstrem dapat mempengaruhi perkembangan penyakit. \n 4. Ruang yang Bersih: Pastikan area hidroponik tetap bersih dan bebas dari sisa-sisa tanaman yang jatuh atau daun yang terinfeksi. Ini akan mengurangi kemungkinan infeksi dan penyebaran penyakit. \n 5. Perlakuan Fungisida: Jika infestasi terjadi, gunakan fungisida yang tepat dan aman untuk mengendalikan pertumbuhan jamur penyebab Leaf Mold. Konsultasikan dengan ahli hidroponik atau petugas pertanian setempat untuk rekomendasi yang sesuai."
+  },
+  {
+    "index": 24,
+    "plantName": "Tomato",
+    "diseaseName": "Tomato Septoria Leaf Spot",
+    "diseaseRecognition": "Penyakit ini ditandai dengan munculnya bercak berwarna coklat pada daun tomat.",
+    "diseaseCause": "Disebabkan oleh Jamur Septoria lycopersici",
+    "solution": "1. Menjaga kebersihan lingkungan sekitar tanaman. \n 2. Menjaga sirkulasi udara yang baik di sekitar tanaman. \n 3. Menggunakan fungisida yang sesuai sesuai petunjuk penggunaan. \n 4. Menghindari penanaman terlalu rapat."
+  },
+  {
+    "index": 25,
+    "plantName": "Tomato",
+    "diseaseName": "Tomato Spider Mites",
+    "diseaseRecognition": "Tomat Spider Mites adalah serangga kecil yang hampir tidak terlihat dengan mata telanjang. Mereka biasanya ditemukan di bagian bawah daun dan di sekitar cabang tanaman. Serangga ini menyebabkan daun menguning, keriput, dan akhirnya mengering.",
+    "diseaseCause": "Disebabkan oleh Tomat Spider Mites yang merupakan serangga kecil berukuran mikroskopis",
+    "solution": "1. Isolasi dan Karantina: Jika terdeteksi adanya serangga ini pada satu tanaman, segera isolasi tanaman tersebut untuk mencegah penyebaran serangga ke tanaman lain dalam sistem hidroponik. \n 2. Semprotan Air: Gunakan semprotan air dengan tekanan sedang untuk membersihkan dan mengusir serangga dari tanaman. Fokuskan semprotan pada daerah-daerah yang terinfeksi dan bagian bawah daun. \n 3. Penggunaan Serangga Pemangsa: Introduksikan serangga pemangsa yang alami, seperti ladybug atau predatory mites, ke dalam sistem hidroponik untuk mengendalikan populasi serangga ini. Serangga pemangsa akan memakan serangga Spider Mites. \n 4. Penggunaan Minyak Hortikultura: Gunakan minyak hortikultura yang aman dan disetujui untuk mengendalikan populasi serangga. Minyak ini membungkus dan mencegah pernapasan serangga, menghentikan perkembangan mereka. \n 5. Sanitasi dan Kebersihan: Pertahankan kebersihan sistem hidroponik dengan membersihkan daun-daun yang jatuh, tanaman yang mati, atau bagian yang terinfeksi. Ini akan mengurangi tempat persembunyian dan perkembangbiakan serangga."
+  },
+  {
+    "index": 26,
+    "plantName": "Tomato",
+    "diseaseName": "Tomato Target Spot",
+    "diseaseRecognition": "Tomato Target Spot ditandai dengan munculnya bercak-bercak kecil berwarna coklat dengan lingkaran konsentris yang terlihat seperti target pada daun, batang, dan buah tomat. Bercak ini dapat berkembang menjadi lesi yang lebih besar dan mengakibatkan kekuningan, kekeringan, dan penurunan kualitas buah.",
+    "diseaseCause": "Penyakit ini disebabkan oleh jamur bernama Alternaria solani",
+    "solution": "1. Sanitasi dan Kebersihan: Pertahankan kebersihan sistem hidroponik dengan membuang daun-daun yang jatuh, sisa-sisa tanaman, atau bagian tanaman yang terinfeksi. Ini akan mengurangi kemungkinan infeksi dan penyebaran penyakit. \n 2. Ventilasi dan Sirkulasi Udara: Pastikan ada ventilasi yang baik di dalam ruangan atau rumah kaca hidroponik untuk meningkatkan sirkulasi udara. Ini akan membantu mengurangi kelembaban dan kondisi yang mendukung perkembangan jamur penyebab Target Spot. \n 3. Irigasi yang Tepat: Hindari penyiraman berlebihan dan pastikan kelembaban media tanam tetap dalam rentang yang seimbang. Berikan air pada akar tanaman dan hindari membasahi daun secara berlebihan. \n 4. Penggunaan Fungisida: Gunakan fungisida yang direkomendasikan dan aman untuk mengendalikan pertumbuhan jamur Alternaria solani. Terapkan sesuai petunjuk dan jadwal yang dianjurkan. \n 5. Rotasi Tanaman: Praktikkan rotasi tanaman yang baik dengan tidak menanam tanaman tomat atau tanaman yang rentan terhadap Alternaria solani pada lokasi yang sama secara berurutan. Hal ini akan membantu mengurangi populasi jamur penyebab Target Spot. \n 6. Penggunaan Mulsa: Terapkan lapisan mulsa organik di sekitar tanaman tomat untuk mengurangi percikan tanah yang dapat membawa spora jamur penyebab penyakit ke tanaman."
+  },
+  {
+    "index": 27,
+    "plantName": "Tomato",
+    "diseaseName": "Tomato Yellow Curl Virus",
+    "diseaseRecognition": "Tomato Yellow Leaf Curl (TYLC) ditandai dengan daun yang menguning, menggulung ke atas, dan mengalami keterbatasan pertumbuhan. Tanaman yang terinfeksi TYLC juga dapat menghasilkan buah yang cacat atau tidak berkualitas",
+    "diseaseCause": "Disebabkan oleh virus yang ditularkan melalui serangga vektor seperti kutu kebul",
+    "solution": "1. Pengendalian Serangga: Lindungi tanaman tomat dari serangga vektor seperti kutu kebul dengan menggunakan jaring penghalau serangga atau serangga pemangsa yang aman. Pengendalian serangga dapat membantu mengurangi penyebaran virus. \n 2. Karantina dan Pemisahan: Pisahkan tanaman yang terinfeksi TYLC dari yang sehat untuk mencegah penyebaran virus. Karantina tanaman yang terinfeksi dan pastikan tidak ada kontak langsung dengan tanaman yang sehat. \n 3. Sanitasi: Pertahankan kebersihan dan sanitasi dalam sistem hidroponik. Buang tanaman yang terinfeksi dan jaga kebersihan peralatan serta area penanaman untuk mengurangi risiko penyebaran penyakit. \n 4. Pengelolaan Nutrisi: Pastikan nutrisi dalam sistem hidroponik seimbang dan cukup. Tanaman yang sehat dan kuat memiliki peluang lebih baik untuk melawan infeksi virus. \n 5. Monitoring dan Deteksi Dini: Periksa tanaman secara teratur untuk tanda-tanda awal infeksi TYLC. Dengan deteksi dini, tindakan pencegahan dan pengendalian dapat diambil lebih cepat."
+  },
+  {
+    "index": 28,
+    "plantName": "Tomato",
+    "diseaseName": "Tomato Mosaic Virus",
+    "diseaseRecognition": "Tomato Mosaic Virus (TMV) menyebabkan mosaik atau pola kemerahan, kuning, atau hijau pada daun tanaman tomat. Tanaman yang terinfeksi TMV biasanya memiliki pertumbuhan yang terhambat, buah yang cacat, dan rendah produktivitasnya. Virus ini dapat menyebar melalui kontak langsung dengan tanaman terinfeksi atau melalui peralatan dan serangga vektor.",
+    "diseaseCause": "Disebabkan oleh Mosaic Virus",
+    "solution": "1. Sanitasi dan Kebersihan: Jaga kebersihan dan sanitasi sistem hidroponik dengan membersihkan peralatan dan area penanaman secara teratur. Hindari kontak langsung dengan tanaman yang terinfeksi atau alat yang telah terpapar virus. \n 2. Pengendalian Serangga: Lindungi tanaman dari serangga vektor seperti kutu kebul yang dapat membawa dan menularkan TMV. Gunakan jaring penghalau serangga atau serangga pemangsa yang aman untuk mengendalikan populasi serangga vektor. \n 3. Karantina dan Pemisahan: Jika tanaman terinfeksi TMV terdeteksi, segera isolasi dan pisahkan tanaman tersebut dari yang sehat untuk mencegah penyebaran virus. \n 4. Pengelolaan Nutrisi: Pastikan nutrisi dalam sistem hidroponik seimbang dan cukup. Tanaman yang mendapatkan nutrisi yang optimal memiliki peluang lebih baik untuk melawan infeksi virus. \n 5. Pengendalian Suhu dan Kelembaban: Jaga suhu dan kelembaban lingkungan hidroponik pada tingkat yang optimal untuk pertumbuhan tanaman. Suhu dan kelembaban yang ekstrem dapat memengaruhi perkembangan TMV."
+  },
+  {
+    "index": 29,
+    "plantName": "Tomato",
+    "diseaseName": "Tomato Healthy",
+    "diseaseRecognition": "",
+    "diseaseCause": "",
+    "solution": ""
+  }
+]
