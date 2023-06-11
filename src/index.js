@@ -10,9 +10,11 @@ const { isAuth } = require('./isAuth.js');
 const port = 3000;
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
-const util = require('util');
 const Multer = require('multer');
+const axios = require('axios');
+const FormData = require('form-data');
 const { Storage } = require('@google-cloud/storage');
+const plantDisease = require('../plant-disease.json');
 
 const app = express();
 
@@ -23,7 +25,6 @@ app.use(express.urlencoded({ extended: false }));
 const User = require('../model/user.js');
 const Blog = require('../model/blog.js');
 const History = require('../model/history.js');
-const { error } = require('console');
 
 // One to many relationship
 User.hasMany(Blog, {
@@ -50,11 +51,14 @@ const dateMonthYear = () => {
   const yyyy = today.getFullYear();
   let mm = today.getMonth() + 1; // Months start at 0!
   let dd = today.getDate();
+  let getHour = today.getHours();
+  let getMinute = today.getMinutes();
+  let getSecond = today.getSeconds();
 
   if (dd < 10) dd = '0' + dd;
   if (mm < 10) mm = '0' + mm;
 
-  const formattedToday = dd + '/' + mm + '/' + yyyy;
+  const formattedToday = dd + '/' + mm + '/' + yyyy + ' ' + getHour + ':' + getMinute + ':' + getSecond;
   return formattedToday;
 };
 
@@ -245,13 +249,9 @@ let processFile = Multer({
   storage: Multer.memoryStorage(),
 }).single('file');
 
-let processFileMiddleware = util.promisify(processFile);
-
 // Creating a blog with accessToken
-app.post('/blogs', isAuth, async (req, res) => {
+app.post('/blogs', isAuth, processFile, async (req, res) => {
   try {
-    await processFileMiddleware(req, res);
-
     if (!req.file) {
       return res.status(400).send({ message: 'Please upload a file!' });
     }
@@ -292,15 +292,6 @@ app.post('/blogs', isAuth, async (req, res) => {
       if (!blogDescription) {
         return res.status(500).send({ message: 'Masukkan isi dari blog' });
       }
-
-      // Pakai kode ini error
-      // if (!blogTitle) {
-      //   throw new Error('Masukkan judul blog');
-      // }
-
-      // if (!blogDescription) {
-      //   throw new Error('Masukkan isi dari blog');
-      // }
 
       if (userId !== null) {
         await Blog.create({
@@ -385,18 +376,38 @@ app.post('/refresh_token', isAuth, async (req, res) => {
 });
 
 // Adding the picture to the ML Model
-app.post('/predict', async (req, res) => {
+app.post('/predict', isAuth, processFile, async (req, res) => {
   try {
-    let formData = new FormData(req.file);
-    formData.append('file', req.file);
-    const response = await fetch('https://hydroplant-glnz5e5urq-et.a.run.app/predict', {
-      method: 'POST',
-      body: formData,
+    const form = new FormData();
+    form.append('input', req.file.buffer, {
+      contentType: req.file.mimetype,
+      filename: req.file.originalname,
     });
-    const result = await response.json();
-    console.log('Success: ', result);
+
+    const response = axios.post('https://hydroplant-glnz5e5urq-et.a.run.app/predict', form, {
+      headers: {
+        ...form.getHeaders(),
+        accept: 'application/json',
+      },
+    });
+    response
+      .then(async (result) => {
+        res.status(200);
+        res.send({
+          error: false,
+          message: 'Penyakit berhasil dipredict',
+          response: plantDisease[parseInt(result.data)],
+        });
+        // await History.create({
+        //   plantImage
+        // })
+      })
+      .catch((error) => {
+        res.status(403);
+        console.error(`${error.message}`);
+      });
   } catch (err) {
-    console.error('Error: ', err);
+    res.status(500).json({ error: true, message: 'No photo file detected' });
   }
 });
 
