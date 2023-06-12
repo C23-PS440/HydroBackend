@@ -46,7 +46,7 @@ db.sync({})
     console.log(err);
   });
 
-const dateMonthYear = () => {
+const dateMonthYearTime = () => {
   const today = new Date();
   const yyyy = today.getFullYear();
   let mm = today.getMonth() + 1; // Months start at 0!
@@ -297,7 +297,7 @@ app.post('/blogs', isAuth, processFile, async (req, res) => {
         await Blog.create({
           blogTitle: blogTitle,
           blogDescription: blogDescription,
-          dateCreated: dateMonthYear(),
+          dateCreated: dateMonthYearTime(),
           createdBy: createdBy,
           imageUrl: publicUrl,
           userId: userId,
@@ -375,40 +375,85 @@ app.post('/refresh_token', isAuth, async (req, res) => {
   return res.send({ accessToken: accessToken });
 });
 
+let processFile2 = Multer({
+  storage: Multer.memoryStorage(),
+}).single('file');
+
 // Adding the picture to the ML Model
-app.post('/predict', isAuth, processFile, async (req, res) => {
+app.post('/predict', isAuth, processFile2, async (req, res) => {
+  let publicUrl = null;
+  // Uploading file to Google Cloud Storage
   try {
-    const form = new FormData();
-    form.append('input', req.file.buffer, {
-      contentType: req.file.mimetype,
-      filename: req.file.originalname,
+    if (!req.file) {
+      return res.status(400).send({ error: true, message: 'Please upload a file!' });
+    }
+
+    const blob = bucket.file(req.file.originalname);
+    const blobStream = blob.createWriteStream();
+    publicUrl = `http://storage.googleapis.com/${bucketName}/${blob.name}`;
+
+    blobStream.on('NotFoundError', (err) => {
+      res.status(500).send({ message: err.message });
     });
 
-    const response = axios.post('https://hydroplant-glnz5e5urq-et.a.run.app/predict', form, {
-      headers: {
-        ...form.getHeaders(),
-        accept: 'application/json',
-      },
+    blobStream.on('InvalidRequestError', (err) => {
+      res.status(500).send({ message: err.message });
     });
-    response
-      .then(async (result) => {
-        res.status(200);
-        res.send({
-          error: false,
-          message: 'Penyakit berhasil dipredict',
-          response: plantDisease[parseInt(result.data)],
+
+    blobStream.on('finish', async () => {
+      try {
+        await bucket.file(req.file.originalname).makePublic();
+      } catch {
+        return res.status(500).send({
+          message: `Uploaded the file successfully: ${req.file.originalname}, but public access is denied`,
+          url: publicUrl,
         });
-        // await History.create({
-        //   plantImage
-        // })
-      })
-      .catch((error) => {
-        res.status(403);
-        console.error(`${error.message}`);
-      });
+      }
+    });
+    blobStream.end(req.file.buffer);
   } catch (err) {
     res.status(500).json({ error: true, message: 'No photo file detected' });
   }
+
+  // Predicting the image with Model
+  const form = new FormData();
+  form.append('input', req.file.buffer, {
+    contentType: req.file.mimetype,
+    filename: req.file.originalname,
+  });
+
+  const response = axios.post('https://hydroplant-glnz5e5urq-et.a.run.app/predict', form, {
+    headers: {
+      ...form.getHeaders(),
+      accept: 'application/json',
+    },
+  });
+  response
+    .then(async (result) => {
+      res.status(200);
+      res.send({
+        error: false,
+        message: 'Penyakit berhasil dipredict',
+        response: plantDisease[parseInt(result.data)],
+      });
+      const userId = req.user.id;
+      if (userId !== null) {
+        await History.create({
+          plantImage: publicUrl,
+          plantName: plantDisease[parseInt(result.data)].plantName,
+          diseaseName: plantDisease[parseInt(result.data)].diseaseName,
+          diseaseRecognition: plantDisease[parseInt(result.data)].diseaseRecognition,
+          diseaseCause: plantDisease[parseInt(result.data)].diseaseCause,
+          solution: plantDisease[parseInt(result.data)].solution,
+          dateAndTime: dateMonthYearTime(),
+          userId: userId,
+        });
+      }
+    })
+    .catch((error) => {
+      res.status(403);
+      console.error(`${error.message}`);
+    });
 });
 
 app.listen(port, () => {
