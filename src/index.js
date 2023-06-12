@@ -57,6 +57,9 @@ const dateMonthYearTime = () => {
 
   if (dd < 10) dd = '0' + dd;
   if (mm < 10) mm = '0' + mm;
+  if (getHour < 10) getHour = '0' + getHour;
+  if (getMinute < 10) getMinute = '0' + getMinute;
+  if (getSecond < 10) getSecond = '0' + getSecond;
 
   const formattedToday = dd + '/' + mm + '/' + yyyy + ' ' + getHour + ':' + getMinute + ':' + getSecond;
   return formattedToday;
@@ -454,6 +457,26 @@ app.post('/predict', isAuth, processFile2, async (req, res) => {
       res.status(403);
       console.error(`${error.message}`);
     });
+});
+
+// Getting the history filtered with the userId
+app.get('/history', isAuth, async (req, res) => {
+  const id = req.user.id;
+  const arrayTemp = [];
+  const userPrivateHistory = await History.findAll({
+    where: {
+      userId: id,
+    },
+  });
+  userPrivateHistory.forEach((historyFoundEach) => {
+    arrayTemp.push(historyFoundEach);
+  });
+  res.status(200);
+  res.send({
+    error: false,
+    message: 'History berhasil dipanggil',
+    history: arrayTemp,
+  });
 });
 
 app.listen(port, () => {
