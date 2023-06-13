@@ -127,6 +127,7 @@ app.post('/login', async (req, res) => {
       message: 'Login Sukses',
       loginResult: {
         userId: getData.id,
+        email: getData.email,
         name: getData.fullName,
         token: accessToken,
       },
@@ -454,8 +455,10 @@ app.post('/predict', isAuth, processFile2, async (req, res) => {
       }
     })
     .catch((error) => {
-      res.status(403);
-      console.error(`${error.message}`);
+      res.status(403).send({
+        error: true,
+        message: `${error.message}`,
+      });
     });
 });
 
