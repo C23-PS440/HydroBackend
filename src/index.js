@@ -242,11 +242,11 @@ app.get('/blogsWithName', isAuth, async (req, res) => {
 
 // Connect to the cloud storage with the service account
 const storage = new Storage({
-  projectId: 'something-idk-388806',
+  projectId: 'capstone-project-389110',
   keyFilename: 'service_account.json',
 });
 
-const bucketName = 'capstone-blog-bucket';
+const bucketName = 'capstone-image';
 const bucket = storage.bucket(bucketName);
 
 let processFile = Multer({
