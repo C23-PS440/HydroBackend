@@ -1,4 +1,4 @@
-require('dotenv/config');
+// require('dotenv/config');
 const db = require('../util/database.js');
 const express = require('express');
 const bcrypt = require('bcrypt');
@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken');
 const saltRounds = 10;
 const { createAccessToken, createRefreshToken, sendAccessToken, sendRefreshToken } = require('./tokens.js');
 const { isAuth } = require('./isAuth.js');
-const port = 3000;
+const port = 8080;
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 const Multer = require('multer');
@@ -25,6 +25,21 @@ app.use(express.urlencoded({ extended: false }));
 const User = require('../model/user.js');
 const Blog = require('../model/blog.js');
 const History = require('../model/history.js');
+
+const { accessSync, constants, writeFileSync } = require('node:fs');
+const serviceAccountFileName = 'service-account.json';
+
+// Get service account json from environment variable
+const serviceAccountJSON = process.env.SERVICE_ACCOUNT;
+if (typeof serviceAccountJSON !== 'undefined') {
+  writeFileSync(serviceAccountFileName, serviceAccountJSON);
+}
+
+try {
+  accessSync(serviceAccountFileName, constants.F_OK);
+} catch (err) {
+  throw new ReferenceError("Doesn't have access to service-account.json or it's not created");
+}
 
 // One to many relationship
 User.hasMany(Blog, {
@@ -242,11 +257,11 @@ app.get('/blogsWithName', isAuth, async (req, res) => {
 
 // Connect to the cloud storage with the service account
 const storage = new Storage({
-  projectId: 'something-idk-388806',
-  keyFilename: 'service_account.json',
+  projectId: 'capstone-project-389110',
+  keyFilename: 'service-account.json',
 });
 
-const bucketName = 'capstone-blog-bucket';
+const bucketName = 'capstone-image';
 const bucket = storage.bucket(bucketName);
 
 let processFile = Multer({
